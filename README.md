@@ -1,2 +1,2 @@
 # website
-My first web site using Javascript, Html5, Css from a template
+My first web site using Javascript, HTML5, CSS from a template. 
