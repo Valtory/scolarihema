@@ -14,9 +14,10 @@
 			<header id="header">
 				<div class="inner">
 					<a href="index.html" class="logo">Scolari - Home</a>
-					<nav id="nav">
 					<a href="queeshema.html" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Que es Hema</a>
 					</nav>
+					<a href="ubicacion.html" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Ubicación</a>
+                </nav>
 					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
 				</div>
 			</header>
@@ -28,8 +29,10 @@
 						<h2>Scolari Esgrima Histórica</h2>
 						<p>Sobre nosotros</p>
 					</header>
-					<p> La escuela nace desde el entusiasmo de la correcta practica y estudio de los tratados antiguos. Fundada por Daniel Bassi y Juan Pedro Fisanotti.(bla bla)</p>
-					<p>(sigue bla bla bla)</p>
+					<p> La escuela nace desde el entusiasmo de la correcta practica y estudio de los tratados antiguos. Fundada por Daniel Bassi y Juan Pedro Fisanotti.</p>
+					<p>Somos estudiantes de las artes marciales, coleccionistas y entusiastas de la historia y, siendo esta la primera agrupación de este tipo en todo Córdoba, buscamos atraer más practicantes en la ciudad, para lo cual buscamos concretar un espacio de práctica y estudio de técnicas para una aceleración de la formación del cuerpo de alumnos que asistan. 
+						La esgrima histórica no sólo es interesante por su carácter cultural e histórico, sino que su práctica a nivel deportivo ofrece varios beneficios: Físicos: agilidad, fuerza, coordinación, balance; Mentales: pensamiento analítico, agilidad mental; Sociales: empatía, superación grupal, comunidad.
+						</p>
 					<div class="flex flex-2">
 						<article>
 							<div class="image fit">
@@ -39,7 +42,7 @@
 						</article>
 						<article>
 							<div class="image fit">
-								<img src="images/pic08.jpg" alt="Pic 08" />
+								<img src="images/felifisa.jpg" alt="Pic 08" />
 							</div>
 							
 						</article>
@@ -47,6 +50,63 @@
 				</div>
 			</section>
 
+<!-- Box -->
+<section >
+	<div class="inner">
+			<!-- Form -->
+			<h3>Sumate a nuestro equipo</h3>
+			
+		<form  name="contactForm" id= "resetForm">	
+			<div class="row uniform">
+				<div class="6u 12u$(xsmall)">
+					<input type="text" name="name" id="name" value="" placeholder="Name" />
+				</div>
+				<div class="6u$ 12u$(xsmall)">
+					<input type="email" name="email" id="email" value="" placeholder="Email" />
+				</div>
+				
+				<div class="6u$ 12u$(small)">
+					<input type="checkbox" id="human" name="human" checked>
+					<label for="human">Soy mayor de 18 años</label>
+				</div>
+				<!-- Break -->
+				<div class="12u$">
+					<textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
+				</div>
+				<!-- Break -->
+				<div class="12u$">
+					<ul class="actions">
+						<li><button type="submit" id="submit-form">Enviar Mensaje</button></li>
+						
+						<li><input type="reset" value="Reset" class="alt" /></li>
+					</ul>
+				</div>
+			</div>
+		</form>
+		<script>
+			const scriptURL = 'https://script.google.com/macros/s/AKfycbxB9X_HObj8pvS7sQgQmAcLb013Fm8_NNyYNDnj6IK9x7K4hk4f/exec'
+			const form = document.forms['contactForm']
+			console.log(form)
+		
+			form.addEventListener('submit', e => {
+				e.preventDefault()
+				fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+				.then(response => {
+					location.href ="thankyou.html"
+					//$('#resetForm')[0].reset();
+					//alert('recibimos tus datos!')
+				})
+				.catch(error => console.error('Error!', error.message))
+			})
+		</script>
+	</div>
+</div>
+</section>
+
+
+
+	</body>
+	
 		<!-- Footer -->
 			<footer id="footer">
 				<div class="inner">
