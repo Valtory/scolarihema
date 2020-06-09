@@ -455,6 +455,7 @@
 	.\-4u {
 		margin-left: 33.33333%;
 	}
+	
 
 	.\-3u {
 		margin-left: 25%;
@@ -1777,6 +1778,7 @@
 			text-align: left;
 		}
 
+	
 	section.wrapper, article.wrapper {
 		padding: 6em 0;
 	}
@@ -1814,6 +1816,21 @@
 			section.wrapper.style1 h3, article.wrapper.style1 h3 {
 				color: #FFF;
 			}
+			section.wrapper.style2 {
+				padding: 0;
+				background: #761818;
+				text-align: center;
+				}
+				section.wrapper.style2 h2{
+					color: #fff;
+				}
+			section.wrapper.style3 {
+				background: #761818;
+				padding: 0;
+				text-align: center;
+				margin: 0 0 0;
+					}
+			
 
 		@media screen and (max-width: 980px) {
 
@@ -2280,6 +2297,10 @@
 			display: block;
 			margin: 0 0 3em 0;
 			width: 100%;
+		}
+		.image.final {
+			max-width: 40%;
+			margin: 100em;
 		}
 
 			.image.main img {
